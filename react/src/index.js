@@ -1,18 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-exports.hello = function() {
-  return "Hello";
-};
+function Welcome(props) {
+  return <h3>This message is from the Welcome component.</h3>;
+}
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
+      <Welcome />
+      <h3>Change the text for the Welcome component to be 'Hello'.</h3>
     </div>
   );
 }
 
-// const rootElement = document.getElementById("root");
-// ReactDOM.render(<App />, rootElement);
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);
+
+exports.Welcome = Welcome;
