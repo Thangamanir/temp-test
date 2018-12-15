@@ -1,9 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-
 exports.hello = function() {
-  return "Hi";
+  return "Hello";
 };
 
 function App() {
