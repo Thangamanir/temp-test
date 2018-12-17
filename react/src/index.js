@@ -1,9 +1,7 @@
-import React from "react";
+//import React from "react";
+import React, { Component } from "react";
 import ReactDOM from "react-dom";
-
-function Welcome(props) {
-  return <h3>This message is from the Welcome component.</h3>;
-}
+import Welcome from "./welcome";
 
 function App() {
   return (
@@ -14,7 +12,5 @@ function App() {
   );
 }
 
-//const rootElement = document.getElementById("root");
-//ReactDOM.render(<App />, rootElement);
-
-exports.Welcome = Welcome;
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);
