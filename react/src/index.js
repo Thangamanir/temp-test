@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <Welcome />
-      <h3>Change the text for the Welcome component to be 'Hello'.</h3>
+      <h3>Change the text for the Welcome component to be 'Hello World!'.</h3>
     </div>
   );
 }
