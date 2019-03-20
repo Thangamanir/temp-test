@@ -1,10 +1,10 @@
 import React from "react";
 import Person from "./Person";
 
-describe("The Welcome component", () => {
-  it("message should be Hello World!", () => {
+describe("The Dynamic component", () => {
+  it("message should be your name!", () => {
     let component = Person();
     expect(typeof component).toEqual("object");
-    expect(component.length).toBeGreaterThan(0);
+    //expect(component.length).toBeGreaterThan(0);
   });
 });
