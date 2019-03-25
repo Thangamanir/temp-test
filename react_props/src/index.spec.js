@@ -1,10 +1,10 @@
 import React from "react";
-import Welcome from "./welcome";
+import Person from "./Person";
 
-describe("The Welcome component", () => {
-  it("message should be Hello World!", () => {
-    let component = Welcome();
+describe("The Person component", () => {
+  it("Testing Person Component", () => {
+    let component = Person();
     expect(typeof component).toEqual("object");
-    expect(component).toEqual(<h3>Hello World!</h3>);
+    //expect(component).toEqual(<h3>Hello World!</h3>);
   });
 });
