@@ -7,7 +7,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Person />
+        <Person name="Pete" />
+        //Add another Person component with your name to be displayed
       </div>
     );
   }
