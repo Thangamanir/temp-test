@@ -1,6 +1,6 @@
-import React, { Component } from "react";
+import React from "react";
 
-const Person = props => {
+function Person  ( props ){
   //Enter code for Person Component
   return <h3>Hello {props.name}</h3>;
 };

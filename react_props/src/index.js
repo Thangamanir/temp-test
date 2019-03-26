@@ -4,11 +4,13 @@ import ReactDOM from "react-dom";
 import Person from "./Person";
 
 class App extends Component {
-  render() {
-    return (
+  //const name = "Cheers";
+  const Person={name,Age};
+  render(){
+    return(
       <div className="App">
         <Person name="Pete" />
-        //Add another Person component with your name to be displayed
+        <Person name="Thangamani"/>
       </div>
     );
   }
