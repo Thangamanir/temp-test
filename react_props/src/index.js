@@ -11,7 +11,6 @@ class App extends Component {
       <div className="App">
         <Person name="Pete" />
         //Create another Person component with a name
-        <Person name="Thangam">
       </div>
     );
   }
