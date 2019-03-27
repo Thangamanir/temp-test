@@ -1,14 +1,12 @@
 import React from "react";
-//import { shallow } from "enzyme";
+import Enzyme ,{ shallow } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16.3';
 import Person from "./Person";
+Enzyme.configure({ adapter: new Adapter() });
 describe("The Person component", () => {
   it("Testing Person Component", () => {
-    let component = Person();
-    expect(component).toEqual(<h3>Hello World!</h3>);
-    //console.print(component.props);
-    // expect(text_entry).not.toBeNull();
-    //expect(component).toEqual(<h3>Hello World!</h3>);
-    //const wrapper = shallow(<App />);
-    //const text_entry = wrapper.find("Person").text();
+    const wrapper = shallow(<Person name="Test" />);
+    const text_entry = wrapper.text();
+    expect(text_entry).toEqual("Hello Test");
   });
 });
