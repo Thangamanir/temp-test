@@ -4,8 +4,6 @@ import ReactDOM from "react-dom";
 import Person from "./Person";
 
 class App extends Component {
-  //const name = "Cheers";
-
   render() {
     return (
       <div className="App">
