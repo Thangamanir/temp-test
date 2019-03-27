@@ -5,12 +5,12 @@ import Person from "./Person";
 
 class App extends Component {
   //const name = "Cheers";
-  
-  render(){
-    return(
+
+  render() {
+    return (
       <div className="App">
         <Person name="Pete" />
-        <Person name="Thangamani"/>
+        //Create another Person component with a name
       </div>
     );
   }
